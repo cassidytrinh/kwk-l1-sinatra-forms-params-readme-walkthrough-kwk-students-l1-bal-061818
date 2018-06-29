@@ -20,8 +20,9 @@
       <% end %>
     <% end %>
     <% @results.each do |result| %>
-      <h3 class="result_title"><%= result.name %></h3>
-      <p><%= result.description %><a href= <% result.link %>> Learn More</a></p>
+      <!-- <h3 class="result_title"><a href= <% result.link %>><%= result.name %></a></h3> -->
+      <a href= <% result.link %>><h3 class="result_title"><%= result.name %></h3></a>
+      <p><%= result.description %></p>
     <% end %>
   </body>
 </html>
